@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "basecomponents",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mmackh/BaseComponents",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e01ddac9818a450b645f5a72139e5f508a1be04d"
+      }
+    }
+  ],
+  "version" : 2
+}
