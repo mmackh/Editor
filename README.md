@@ -1,3 +1,5 @@
+![Editor Window](/Screenshots/c.png?raw=true)
+
 ## Editor
 
 Attempt at writing a code editor in UIKit for the Mac from scratch. There are many missing core features and there are occasional crashes. Writing a text editor is a humbling experience that I've spent many months on. No external dependencies, although there are inspirations from all over. Also, there's no SPM for now.
@@ -11,21 +13,21 @@ import UIKit
 import BaseComponents
 
 class ViewController: UIViewController {
-		lazy var editor: Editor = .init(parentViewController: self)
+  lazy var editor: Editor = .init(parentViewController: self)
 
-		override func viewDidLoad() {
-				super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 				
-				view.build { [unowned self] in
-						Equal {
-								self.editor
-						}
-				}
+    view.build { [unowned self] in
+      Equal {
+        self.editor
+      }
+    }
 				
-				let session: Editor.Session = .init(text: File(bundleResource: "sample-c", extension: "txt").read(as: String.self) ?? "", position: .zero)
-				session.assistant = .init(language: .c, lspConfiguration: nil)
-				editor.resume(session: session)
-		}
+    let session: Editor.Session = .init(text: File(bundleResource: "sample-c", extension: "txt").read(as: String.self) ?? "", position: .zero)
+    session.assistant = .init(language: .c, lspConfiguration: nil)
+    editor.resume(session: session)
+  }
 }
 ```
 
