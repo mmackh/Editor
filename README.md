@@ -1,4 +1,6 @@
-![Editor Window](/Screenshots/c.png?raw=true| width=320)
+<p align="center">
+  <img alt="Editor Window" src="/Screenshots/c.png?raw=true" width="420" height="auto" />
+</p>
 
 ## Editor
 
