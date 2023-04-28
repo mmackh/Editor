@@ -1,4 +1,4 @@
-![Editor Window](/Screenshots/c.png?raw=true)
+![Editor Window](/Screenshots/c.png?raw=true| width=320)
 
 ## Editor
 
